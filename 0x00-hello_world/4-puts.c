@@ -5,7 +5,7 @@
 int main()
 {
 	/*puts() to print an exact line of text to the standard output*/
-	puts("\"Programming is like building a multilingual puzzle\n");
+	puts("\"Programming is like building a multilingual puzzle");
 	/*Return value should be zero*/
 	return (0);
 }
