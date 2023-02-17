@@ -3,8 +3,7 @@
 /**
  * main() - Main function, printing a string to the standard output.
  *
- * Description: 
- * We start by initializing the required string.
+ * Description:  We start by initializing the required string.
  * Then we print it out to the stdout using the puts() function.
  *
  * Return:
