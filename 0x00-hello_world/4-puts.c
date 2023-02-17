@@ -1,11 +1,11 @@
 /*Appropriate header file*/
-#include <stdio.h>
+#include<stdio.h>
 
 /*Main function, which is the start of our program.*/
 int main()
 {
 	/*Initialization of the required string:*/
-	char myString[] = "\"Programming is like building a multilingual puzzle";
+	char myString[] = "\"Programming is like building a multilingual puzzle\n";
 	/*Printing the string to the stdout*/
 	puts(myString);
 	/*Return value should be zero*/
