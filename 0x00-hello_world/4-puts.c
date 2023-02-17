@@ -1,7 +1,9 @@
 /*Appropriate header file*/
 #include<stdio.h>
 
-/*Main function, which is the start of our program.*/
+/**
+ * Main function, which is the start of our program.
+ */
 int main(void)
 {
 	/*Initialization of the required string:*/
