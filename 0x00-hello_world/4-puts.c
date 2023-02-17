@@ -1,8 +1,11 @@
 #include<stdio.h>
 
 /**
- * main() - Main function, printing a string to the stdout.
- * Return: 0
+ * main - Entry point of the program.
+ *
+ * Description - Printing a specified string to stdout.
+ *
+ * Return: Always 0 (Success!)
  */
 int main(void)
 {
