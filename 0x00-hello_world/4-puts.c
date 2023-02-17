@@ -1,15 +1,14 @@
-/*Appropriate header file*/
 #include<stdio.h>
 
 /**
  * Main function, which is the start of our program.
+ * We start by initializing the required string.
+ * Then we print it out to the stdout using the puts() function.
+ * The return should be zero.
  */
 int main(void)
 {
-	/*Initialization of the required string:*/
 	char myString[] = "\"Programming is like building a multilingual puzzle";
-	/*Printing the string to the stdout*/
 	puts(myString);
-	/*Return value should be zero*/
 	return (0);
 }
