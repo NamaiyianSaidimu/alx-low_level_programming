@@ -1,6 +1,12 @@
 #include<stdio.h>
 
-int main()
+/**
+ * main - entry point of our program.
+ *
+ * Description: printing the size of various data types.
+ *
+ * Return: Always 0 (Success!)
+int main(void)
 {
 	/*Initializing our variables of different data types:*/
 	char characterType;
