@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 /**
- * main() - The entry point of our program, where we are printinga string to the standard output.
+ * main() - Main function, printing a string to the standard output.
  *
  * Description: 
  * We start by initializing the required string.
