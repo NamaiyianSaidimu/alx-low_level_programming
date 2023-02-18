@@ -8,7 +8,7 @@
  * description: to determine if a random
  * number is positive or negative.
  *
- * return: Always 0(Success!)
+ * Return: Always 0(Success!)
  */
 int main(void)
 {
