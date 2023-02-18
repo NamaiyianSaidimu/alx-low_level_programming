@@ -5,3 +5,5 @@ Some of the concepts explored in the projects in this repository include:
 3) How to print text using the printf, puts and putchar.
 4) How to get the size of a specific type using the unary operator sizeof.
 5) How to compile a program using gcc.
+6) Variables in C
+7) If... Else statements
