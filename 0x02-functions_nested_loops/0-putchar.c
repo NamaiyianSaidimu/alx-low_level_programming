@@ -1,6 +1,7 @@
 #include "main.h"
 
-/** main - our function's entry point.
+/** 
+ * main - our function's entry point.
  *
  * Description: a program that prints _putchar;
  *
