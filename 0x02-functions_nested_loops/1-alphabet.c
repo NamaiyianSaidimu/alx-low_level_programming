@@ -18,14 +18,3 @@ void print_alphabet(void){
 	_putchar('\n');
 }
 
-/**
- * main - our program's entry point.
- *
- * Description: We call the function print_alphabet()
- *
- * Return: 0(Success!)
- */
-int main(void){
-	print_alphabet();
-	return (0);
-}
