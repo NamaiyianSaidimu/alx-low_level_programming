@@ -30,7 +30,7 @@ int main(void)
 					if (x + y + z < 24)
 					{
 						putchar(',');
-						putchar('\n');
+						putchar(' ');
 					}
 				}
 			}
