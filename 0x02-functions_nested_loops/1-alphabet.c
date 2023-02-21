@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabet(): a function to print the alphabet
+ * print_alphabet - a function to print the alphabet
  *
  * Description: The alphabet should be in lowercase
  * and followed by a new line.
