@@ -15,7 +15,7 @@ void jack_bauer(void)
 
 	for (i = 0; i <= 2; i++)/*first digit*/
 	{
-		for (j= 0; j <= 9; j++)/*second digit*/
+		for (j = 0; j <= 9; j++)/*second digit*/
 		{
 			if ((i <= 1 && j <= 9) || (i <= 2 && j <= 3))
 			{
