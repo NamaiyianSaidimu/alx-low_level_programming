@@ -2,7 +2,7 @@
 
 /**
  * _abs - function for absolute values.
- * @n - the variable that will store the
+ * @n: the variable that will store the
  * number to be tested.
  *
  * description: It computes the absolute value
