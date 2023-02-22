@@ -11,16 +11,20 @@
 void times_table(void)
 {
 	int i;
-	int j = 0;
+	int j;
+	int k = 0;
 
 	for (i = 0; i <= 9; i++)
 	{
-		while (j <= 9)
+		for (j = 0; j <= 9; j++)
 		{
-			_putchar(i * j + '0');
-			_putchar(',');
-			_putchar(' ');
-			j++;
+			while (k <= 9)
+			{
+				_putchar(j * k + '0');
+				_putchar(',');
+				_putchar(' ');
+				k++;
+			}
 		}
 		_putchar('\n');
 	}
