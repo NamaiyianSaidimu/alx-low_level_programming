@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_sign - A function that prints
- * the sign of a number.
+ * print_sign - printing the sign of a number
+ * @n: the number whose sign we will print.
  *
  * description: It prints different statements
  * depending on whether the number is positive,
