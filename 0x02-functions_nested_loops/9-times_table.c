@@ -14,30 +14,10 @@ void times_table(void)
 
 	for (i = 0; i <= 9; i++)
 	{
-		if (i < 9)
+		for (j = 0; j <=9; j++)
 		{
-			_putchar(0 + '0');
-			_putchar(',');
+			_putchar((i * j) + '0');
 			_putchar(' ');
-		}
-		else
-		{
-			_putchar(0 + '0');
-			_putchar('\n');
-		}
-	}
-	for (i = 0; i <= 9; i++)
-	{
-		if (i < 9)
-		{
-			_putchar((i * (i + 1)) + '0');
-			_putchar(',');
-			_putchar(' ');
-		}
-		else
-		{
-			_putchar((i * (i + 1)) + '0');
-			_putchar('\n');
 		}
 	}
 }
