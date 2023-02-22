@@ -11,31 +11,27 @@
  */
 void jack_bauer(void)
 {
-	int i = 0;
-	int j = 0;
-	int k = 0;
-	int l = 0;
+	int i, j, k, l;
 
-	while (i < 3)
+	for (i = 0; i < = 2; i++)/*first digit*/
 	{
-		while (j < 4)
+		for (j= 0; j <= 9; j++)/*second digit*/
 		{
-			while (k < 6)
+			if ((i <= 1 && j <= 9) || (i <= 2 && j <= 3))
 			{
-				while (l < 10)
+				for (k = 0; k <= 5; k++)/*third digit*/
 				{
-					_putchar(l + '0');
-					_putchar('\n');
-					l++;
+					for (l = 0; l <= 9; l++)/*fourth digit*/
+					{
+						_putchar(i + '0');
+						_putchar(j + '0');
+						_putchar(':');
+						_putchar(k + '0');
+						_putchar(l + '0');
+						_putchar('\n');
+					}
 				}
-				_putchar(k + '0');
-				k++;
 			}
-			_putchar(j + '0');
-			_putchar(':');
-			j++;
 		}
-		_putchar(i + '0');
-		i++;
 	}
 }
