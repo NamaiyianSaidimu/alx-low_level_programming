@@ -13,7 +13,8 @@
 void print_to_98(void)
 {
 	int n;
-	scanf("Enter a number: ", &n);
+	printf("Enter a number: \n");
+	scanf("%d", &n);
 
 	if (n > 98)
 	{
