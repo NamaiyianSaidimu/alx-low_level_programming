@@ -30,13 +30,13 @@ void times_table(void)
 	{
 		if (i < 9)
 		{
-			_putchar(i * (i + 1) + '0');
+			_putchar((i * (i + 1)) + '0');
 			_putchar(',');
 			_putchar(' ');
 		}
 		else
 		{
-			_putchar(i * (i + 1) + '0');
+			_putchar((i * (i + 1)) + '0');
 			_putchar('\n');
 		}
 	}
