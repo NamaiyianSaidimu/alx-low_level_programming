@@ -13,7 +13,7 @@ void jack_bauer(void)
 {
 	int i, j, k, l;
 
-	for (i = 0; i < = 2; i++)/*first digit*/
+	for (i = 0; i <= 2; i++)/*first digit*/
 	{
 		for (j= 0; j <= 9; j++)/*second digit*/
 		{
