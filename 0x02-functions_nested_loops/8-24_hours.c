@@ -25,16 +25,17 @@ void jack_bauer(void)
 				while (l < 10)
 				{
 					_putchar(l + '0');
+					_putchar('\n');
 					l++;
 				}
 				_putchar(k + '0');
 				k++;
 			}
 			_putchar(j + '0');
-			_putchar('\n');
+			_putchar(':');
 			j++;
 		}
 		_putchar(i + '0');
-		i++j
+		i++;
 	}
 }
