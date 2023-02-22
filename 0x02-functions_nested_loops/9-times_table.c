@@ -22,6 +22,7 @@ void times_table(void)
 		else
 		{
 			_putchar(0 + '0');
+			_putchar('\n');
 		}
 	}
 	for (i = 0; i <= 9; i++)
