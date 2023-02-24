@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_line - printing a straight line on
- * the terminal.
+ * print_line - printing a straight line on the terminal.
+ * @n: Number of line characters.
  *
  * Return: void
  */
