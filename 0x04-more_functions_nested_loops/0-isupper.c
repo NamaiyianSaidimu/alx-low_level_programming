@@ -1,3 +1,8 @@
+/**
+ * File: 0-isupper.c
+ * Author: NamaiyianSaidimu
+ */
+
 #include "main.h"
 
 /**
@@ -8,7 +13,7 @@
  * and the function checks whether it is uppercase of
  * lowercase.
  *
- * Return: 1 (Success!), 0 otherwise.
+ * Return: 1 if character is uppercase, 0 otherwise.
  */
 
 int _isupper(int c)
