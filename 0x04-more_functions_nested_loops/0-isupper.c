@@ -8,8 +8,7 @@
  * and the function checks whether it is uppercase of
  * lowercase.
  *
- * Return: 1 if c is uppercase
- * Otherwise, 0 is returned.
+ * Return: 1 if c is uppercase, 0 otherwise.
  */
 
 int _isupper(int c)
