@@ -14,11 +14,11 @@ char *leet(char *s)
 	char letters[] = {'A', 'E', 'O', 'T', 'L'};
 	char numbers[] = {4, 3, 0, 7, 1};
 
-	while(*s)
+	while (*s)
 	{
 		for (i = 0; i < 5; i++)
 		{
-			if (*s == letters[i] || *s == letters[i] +32)
+			if (*s == letters[i] || *s == letters[i] + 32)
 			{
 				*s = numbers[i] + '0';
 			}
