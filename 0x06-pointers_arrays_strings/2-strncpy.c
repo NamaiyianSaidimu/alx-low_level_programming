@@ -11,14 +11,18 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	char *ptr;
-	ptr = dest;
+	/* Initialize a pointer pointing to the start of dest */
+	char *ptr = dest;
+	/* copy first n characters pointed by src to array */
+	/* pointed by dest */
 	while (*src && n--)
 	{
 		*dest = *src;
 		dest++;
 		src++;
 	}
+	/* Null terminate dest */
 	*dest = '\0';
+
 	return (ptr);
 }
