@@ -10,6 +10,9 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
+	char *begin;
+	char *pattern;
+
 	while (*haystack)
 	{
 		begin = haystack;
