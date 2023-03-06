@@ -23,7 +23,7 @@ char *_strstr(char *haystack, char *needle)
 			haystack++;
 			pattern++;
 		}
-		if ((!*pattern)
+		if (!*pattern)
 		{
 			return (begin);
 		}
