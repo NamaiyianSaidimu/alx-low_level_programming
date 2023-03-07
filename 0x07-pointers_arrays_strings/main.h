@@ -9,3 +9,5 @@ unsigned int _strspn(char *s, char *accept);
 char *_strchr(char *s, char c);
 
 char *_strstr(char *haystack, char *needle);
+
+void print_diagsums(int *a, int size);
