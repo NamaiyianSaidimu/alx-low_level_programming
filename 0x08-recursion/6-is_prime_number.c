@@ -20,7 +20,7 @@ int divide(int num, int i)
 	{
 		return (1);
 	}
-	return (divide(num, i + 1);
+	return (divide(num, i + 1));
 }
 
 /**
@@ -32,6 +32,7 @@ int divide(int num, int i)
 int is_prime_number(int n)
 {
 	int divisor = 2;
+
 	if (n <= 1)
 	{
 		return (0);
@@ -40,5 +41,5 @@ int is_prime_number(int n)
 	{
 		return (1);
 	}
-	return(divide(n, divisor));
+	return (divide(n, divisor));
 }
