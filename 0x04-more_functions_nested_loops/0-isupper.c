@@ -6,7 +6,7 @@
 #include "main.h"
 
 /**
- * is_upper - function that checks for uppercase characters
+ * _isupper - function that checks for uppercase characters
  * @c: character to be evaluated.
  *
  * Description: A character c is passed in the function
