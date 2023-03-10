@@ -14,6 +14,7 @@
 int main(int argc, char *argv[])
 {
 	int arg_number = argc - 1;
+
 	printf("%d\n", arg_number);
 	(void)argv;
 	return (0);
