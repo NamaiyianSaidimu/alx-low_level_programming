@@ -38,20 +38,14 @@ char *str_concat(char *s1, char *s2)
 	}
 	else
 	{
-		if (s1 == NULL && s2 != NULL)
-			new_string = s2;
-		else if (s2 == NULL && s1 != NULL)
-			new_string = s1;
-		else{
-			for (i = 0; i < length_s1; i++)
-			{
-				*(new_string + i) = *(s1 + i);
-			}
-			for (i = length_s1; i < new_length; i++)
-			{
-				*(new_string + i) = *(s2 + (i - length_s1));
-			}
+		for (i = 0; i < length_s1; i++)
+		{
+			*(new_string + i) = *(s1 + i);
 		}
-		return(new_string);
+		for (i = length_s1; i < new_length; i++)
+		{
+			*(new_string + i) = *(s2 + (i - length_s1));
+		}
+		return (new_string);
 	}
 }
