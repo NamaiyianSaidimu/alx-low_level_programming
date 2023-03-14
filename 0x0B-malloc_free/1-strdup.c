@@ -24,11 +24,11 @@ char *_strdup(char *str)
 	}
 
 	duplicate = malloc(length + 1);
-	if (str == NULL)
+	if (duplicate == NULL)
 	{
 		return (NULL);
 	}
-	if (duplicate == NULL)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
