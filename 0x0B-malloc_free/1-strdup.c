@@ -34,7 +34,7 @@ char *_strdup(char *str)
 	}
 	else
 	{
-		for (i = 0; i <= length; i++)
+		for (i = 0; i <= length + 1; i++)
 		{
 			duplicate[i] = *(str + i);
 		}
