@@ -40,4 +40,5 @@ int **alloc_grid(int width, int height)
 		}
 		return (array_2d);
 	}
+	free(array_2d);
 }
