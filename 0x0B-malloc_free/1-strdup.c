@@ -15,9 +15,15 @@
 char *_strdup(char *str)
 {
 	char *duplicate;
-	unsigned int i = 0;
+	unsigned int i;
+	unsigned int length = 0;
 
-	duplicate = malloc(sizeof(*str));
+	for (i = 0; *(str + i) != '\0'; i++)
+	{
+		length++;
+	}
+
+	duplicate = malloc(length);
 	if (str == NULL)
 	{
 		return (NULL);
@@ -28,7 +34,7 @@ char *_strdup(char *str)
 	}
 	else
 	{
-		for (i = 0; *(str + i) != '\0'; i++)
+		for (i = 0; i < length; i++)
 		{
 			duplicate[i] = *(str + i);
 		}
