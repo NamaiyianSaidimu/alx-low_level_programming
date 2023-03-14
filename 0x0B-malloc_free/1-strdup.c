@@ -28,12 +28,10 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	/**
-	 *if (duplicate == NULL)
-	 *{
-	 *	return (NULL);
-	 *}
-	 */
+	if (duplicate == NULL)
+	{
+		return (NULL);
+	}
 	else
 	{
 		for (i = 0; i <= length; i++)
