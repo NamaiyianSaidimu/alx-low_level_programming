@@ -20,12 +20,11 @@ int **alloc_grid(int width, int height)
 	{
 		array_2d[i] = malloc(sizeof(int) * width);
 	}
-
-	if (width <= 0 && height <= 0)
+	if (array_2d == NULL)
 	{
 		return (NULL);
 	}
-	if (array_2d == NULL)
+	if (width <= 0 && height <= 0)
 	{
 		return (NULL);
 	}
