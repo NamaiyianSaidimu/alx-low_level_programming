@@ -41,7 +41,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	{
 		destination[i] = source[i];
 	}
-	return(dest);
+	return (dest);
 }
 
 /**
@@ -59,7 +59,7 @@ char *argstostr(int ac, char **av)
 	int i;
 	unsigned int length;
 	char *all_arguments, *arguments;
-	
+
 	for (i = 1; i < ac; i++)
 	{
 		length = _strlen(av[i]);
