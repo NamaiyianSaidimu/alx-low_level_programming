@@ -65,6 +65,14 @@ char *argstostr(int ac, char **av)
 		length = _strlen(av[i]);
 	}
 	all_arguments = arguments = (char *)malloc(length + ac - 1);
+	if (all_arguments == NULL)
+	{
+		return (NULL);
+	}
+	if (ac == 0 || av == NULL)
+	{
+		return (NULL);
+	}
 	for (i = 1; i < ac; i++)
 	{
 		_memcpy(all_arguments, av[i], _strlen(av[i]));
