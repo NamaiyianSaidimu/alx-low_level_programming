@@ -4,28 +4,11 @@
 
 /**
  * _strlen - calculating the length of a string
- * @str: string to be evaluated
- *
- * Return: string length
- */
-int _strlen(char **str)
-{
-	int length = 0;
-	
-	while (*str)
-	{
-		length++;
-	}
-	return (length);
-}
-
-/**
- * _strlen2 - calculating the length of a string
  * @str: the string to be evaluated
  *
  * Return: string length
  */
-int _strlen2(char *str)
+int _strlen(char *str)
 {
 	int length = 0;
 	int i;
@@ -35,6 +18,30 @@ int _strlen2(char *str)
 		length++;
 	}
 	return (length);
+}
+
+/**
+ * _memcpy - copying memory area
+ * @dest: destination string
+ * @src: source string
+ * @n: bytes
+ *
+ * Return: pointer to destination string
+ */
+char *_memcpy(char *dest, char *src, unsigned int n)
+{
+	unsigned int i;
+	char *destination;
+	char *source;
+
+	source = src;
+	destination = dest;
+
+	for (i = 0; i < n; i++)
+	{
+		destination[i] = source[i];
+	}
+	return(dest);
 }
 
 /**
@@ -50,40 +57,20 @@ int _strlen2(char *str)
 char *argstostr(int ac, char **av)
 {
 	int i;
-	int j;
-	int length;
-	char **new_arguments;
+	unsigned int length;
+	char *all_arguments, *arguments;
 	
-	new_arguments = malloc(sizeof(char *) * ac);
-	for ( i = 1; i < ac + 1; i++)
+	for (i = 1; i < ac; i++)
 	{
-		new_arguments[i] = malloc((_strlen2(*(av + i)) + 1) * sizeof(char));
+		length = _strlen(av[i]);
 	}
-	if (new_arguments == NULL)
+	all_arguments = arguments = (char *)malloc(length + ac - 1);
+	for (i = 1; i < ac; i++)
 	{
-		return (NULL);
+		_memcpy(all_arguments, av[i], _strlen(av[i]));
+		all_arguments += _strlen(av[i]);
+		*(all_arguments - 1) = '\n';
 	}
-	if (ac == 0 || av == NULL)
-	{
-		return (NULL);
-	}
-	else
-	{
-		for (i = 1; i < ac; i++)
-		{
-			length = _strlen2(av[i]);
-			for (j = 0; j <= length; j++)
-			{
-				if (av[i][j] == ' ')
-				{
-					av[i][j] = '\n';
-				}
-				else
-				{
-					new_arguments[i][j] = av[i][j];
-				}
-			}
-		}
-		return (*new_arguments);
-	}
+	*(all_arguments - 1) = 0;
+	return (arguments);
 }
