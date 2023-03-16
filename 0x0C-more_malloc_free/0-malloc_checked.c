@@ -13,13 +13,10 @@ void *malloc_checked(unsigned int b)
 {
 	void *new_array;
 
-	new_array = malloc(sizeof(void *) * b);
+	new_array = malloc(b);
 	if (new_array == NULL)
 	{
 		exit(98);
 	}
-	else
-	{
-		return (new_array);
-	}
+	return (new_array);
 }
